@@ -1,0 +1,48 @@
+name: pages
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Github Pages
+        env:
+          GIT_NAME: Simple
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          REPO_NAME: dashboard
+          REPO: github.com/thesixonenine/dashboard
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          mkdir ./tmp
+          cd tmp/
+          git clone -b pages "https://$GH_TOKEN@$REPO"
+          mv ./$REPO_NAME/.git/ ./
+          rm -rf ./$REPO_NAME/*
+          mv ./.git ./$REPO_NAME/
+          mv ../dist/* ./$REPO_NAME/
+          cd $REPO_NAME/
+          git config user.name $GIT_NAME
+          git config user.email $GIT_EMAIL
+          git add .
+          git commit -m "Deploy to Github Pages"
+          status_output=$(git status)
+          if echo "$status_output" | grep -q "publish"; then git push; else echo "Skipping git push."; fi
