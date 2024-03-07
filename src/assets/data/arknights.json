@@ -883,5 +883,138 @@
 		],
 		"pool": "【联合行动】特选干员定向寻访",
 		"ts": 1709001751
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1709360941
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "绮良",
+				"rarity": 4
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1709360978
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1709360987
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "医生",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "孑",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "深海色",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "缠丸",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709801774
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709809819
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "泡泡",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709809836
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709809853
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "杰克",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709809862
 	}
 ]
