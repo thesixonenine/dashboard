@@ -1016,5 +1016,293 @@
 		],
 		"pool": "突破，援助，任务循环",
 		"ts": 1709809862
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709829108
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709829114
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709829121
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1709963273
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058548
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "缠丸",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "宴",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "双月",
+				"rarity": 4
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058560
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杰克",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安比尔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "缠丸",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058572
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "医生",
+				"rarity": 4
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058583
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058587
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710058590
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710087132
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "双月",
+				"rarity": 4
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710174015
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710174022
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710174029
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "远山",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710203963
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710249955
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710249977
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710252384
 	}
 ]
