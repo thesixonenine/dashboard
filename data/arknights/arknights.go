@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"sort"
 	"strconv"
@@ -89,7 +90,11 @@ func LocalHistory() []Wish {
 
 func FetchGacha(page int, token string, csrf string) Gacha {
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", "https://ak.hypergryph.com/user/api/inquiry/gacha?page="+strconv.Itoa(page)+"&channelId=1&token="+token, nil)
+	parse, parseErr := url.Parse(fmt.Sprintf("https://ak.hypergryph.com/user/api/inquiry/gacha?page=%d&channelId=1&token=%s", page, url.QueryEscape(token)))
+	if parseErr != nil {
+		log.Fatal(parseErr)
+	}
+	req, err := http.NewRequest("GET", parse.String(), nil)
 	if err != nil {
 		log.Fatal(err)
 	}

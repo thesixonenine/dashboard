@@ -1304,5 +1304,94 @@
 		],
 		"pool": "突破，援助，任务循环",
 		"ts": 1710252384
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杰克",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "艾拉",
+				"rarity": 5
+			}
+		],
+		"pool": "突破，援助，任务循环",
+		"ts": 1710376264
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1710432944
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "澄闪",
+				"rarity": 5
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1710432952
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1710462783
 	}
 ]
