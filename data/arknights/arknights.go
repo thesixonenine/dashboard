@@ -20,6 +20,61 @@ const JSONFilePath = "../../src/assets/data/arknights.json"
 
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 func main() {
+	UpdateGacha()
+	Stat()
+}
+
+type PoolStat struct {
+	Name    string
+	Pull    int
+	SixCnt  int
+	SixName []string
+	FiveCnt int
+}
+
+func Stat() {
+	poolStatMap := map[string]PoolStat{}
+	history := LocalHistory()
+	for _, wish := range history {
+		stat := poolStatMap[wish.Pool]
+		stat.Name = wish.Pool
+		curPull := stat.Pull
+		stat.Pull += len(wish.Chars)
+		for _, char := range wish.Chars {
+			curPull += 1
+			if char.Rarity == 5 {
+				stat.SixCnt += 1
+				if stat.Name == "公招" {
+					stat.SixName = append(stat.SixName, char.Name)
+				} else {
+					stat.SixName = append(stat.SixName, fmt.Sprintf("%s(%d)", char.Name, curPull))
+				}
+			}
+		}
+		poolStatMap[wish.Pool] = stat
+	}
+	output := make([]string, 0)
+
+	sortedMap(poolStatMap, func(key string, stat PoolStat) {
+		if stat.SixCnt > 0 {
+			output = append(output, fmt.Sprintf("Pool %s\n%s", key, strings.Join(stat.SixName, ",")))
+		}
+	})
+	fmt.Printf("######\n%s\n######", strings.Join(output, "\n"))
+}
+
+func sortedMap[T interface{}](m map[string]T, f func(k string, v T)) {
+	var keys []string
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, k := range keys {
+		f(k, m[k])
+	}
+}
+
+func UpdateGacha() {
 	token := ""
 	csrf := ""
 

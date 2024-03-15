@@ -3,6 +3,28 @@
 		"chars": [
 			{
 				"isNew": true,
+				"name": "能天使",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 0
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "煌",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 1
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
 				"name": "燧石",
 				"rarity": 4
 			}
