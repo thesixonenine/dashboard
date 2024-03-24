@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"bytes"
 	"encoding/json"
 	"fmt"
@@ -9,6 +10,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
@@ -20,8 +22,34 @@ const JSONFilePath = "../../src/assets/data/arknights.json"
 
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 func main() {
-	UpdateGacha()
+	token, xCsrfToken := ExtractTokens()
+	token, _ = url.QueryUnescape(token)
+	fmt.Println("token: " + token)
+	fmt.Println("X-Csrf-Token: " + xCsrfToken)
+	UpdateGacha(token, xCsrfToken)
 	Stat()
+}
+
+func ExtractTokens() (string, string) {
+	fmt.Println("Please input URL contains token and x-csrf-token")
+	inputText, _ := bufio.NewReader(os.Stdin).ReadString('\n')
+	inputText = strings.TrimSpace(inputText)
+	fmt.Println("Your Input: " + inputText)
+	tokenRegexp := regexp.MustCompile(`token.*channelId`)
+	token, _ := strings.CutPrefix(tokenRegexp.FindString(inputText), "token=")
+	token, _ = strings.CutSuffix(token, "&channelId")
+	token = strings.ReplaceAll(token, "^", "")
+	token = strings.TrimSpace(token)
+	token, _ = url.QueryUnescape(token)
+
+	csrfTokenRegexp := regexp.MustCompile(`x-csrf-token(.*?)['"]`)
+	xCsrfToken := csrfTokenRegexp.FindString(inputText)
+	xCsrfToken, _ = strings.CutPrefix(xCsrfToken, "x-csrf-token:")
+
+	xCsrfToken = xCsrfToken[:len(xCsrfToken)-1]
+	xCsrfToken = strings.TrimSpace(xCsrfToken)
+
+	return token, xCsrfToken
 }
 
 type PoolStat struct {
@@ -74,10 +102,7 @@ func sortedMap[T interface{}](m map[string]T, f func(k string, v T)) {
 	}
 }
 
-func UpdateGacha() {
-	token := ""
-	csrf := ""
-
+func UpdateGacha(token string, csrf string) {
 	history := LocalHistory()
 	var maxTs int64 = 0
 	var maxWish = Wish{}
