@@ -25,6 +25,17 @@
 		"chars": [
 			{
 				"isNew": true,
+				"name": "史尔特尔",
+				"rarity": 5
+			}
+		],
+		"pool": "高级凭证兑换",
+		"ts": 2
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
 				"name": "燧石",
 				"rarity": 4
 			}
