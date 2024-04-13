@@ -22,10 +22,12 @@ const JSONFilePath = "../../src/assets/data/arknights.json"
 
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 func main() {
-	token, xCsrfToken := ExtractTokens()
-	token, _ = url.QueryUnescape(token)
-	fmt.Println("token: " + token)
-	fmt.Println("X-Csrf-Token: " + xCsrfToken)
+	// token, xCsrfToken := ExtractTokens()
+	// token, _ = url.QueryUnescape(token)
+	// fmt.Println("token: " + token)
+	// fmt.Println("X-Csrf-Token: " + xCsrfToken)
+	token := ""
+	xCsrfToken := ""
 	UpdateGacha(token, xCsrfToken)
 	Stat()
 }

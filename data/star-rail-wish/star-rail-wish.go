@@ -18,7 +18,7 @@ import (
 	"time"
 )
 
-const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.20.0.0\\Cache\\Cache_Data\\data_2"
+const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.22.0.0\\Cache\\Cache_Data\\data_2"
 const JSONFilePath = "../../src/assets/data/star-rail-wish.json"
 
 var re = regexp.MustCompile(`\p{C}`)
@@ -29,7 +29,7 @@ var gachaTypeMap = map[string]string{
 	"1":  "常驻跃迁",
 	"2":  "新手跃迁",
 }
-var absParams = []string{"authkey", "authkey_ver", "sign_type", "game_biz", "lang", "auth_appid", "size", "gacha_type", "page", "end_id"}
+var absParams = []string{"authkey_ver", "sign_type", "auth_appid", "lang", "authkey", "game_biz", "page", "size", "gacha_type"}
 
 func main() {
 	// 使用抽卡 URL 进行循环查询抽卡历史, 一但发现已经存在于历史 JSON 文件中, 则停止查询
@@ -38,6 +38,13 @@ func main() {
 
 // FindURLFromLogFile 查询日志文件中的抽卡 URL
 func FindURLFromLogFile() UrlParam {
+	for _, p := range strings.Split(WishHistoryFilePath, "\\") {
+		_, err := strconv.Atoi(strings.ReplaceAll(p, ".", ""))
+		if err != nil {
+			continue
+		}
+		log.Println("Version: " + p)
+	}
 	content, err := os.ReadFile(WishHistoryFilePath)
 	if err != nil {
 		log.Fatalf("日志文件[%s]未找到", WishHistoryFilePath)
@@ -53,6 +60,9 @@ func FindURLFromLogFile() UrlParam {
 		if parseErr != nil {
 			continue
 		}
+		if FetchData(t).Retcode != 0 {
+			continue
+		}
 		queryMap := ParseQuery(u.RawQuery)
 
 		for k, v := range queryMap {
@@ -61,6 +71,8 @@ func FindURLFromLogFile() UrlParam {
 			}
 		}
 		lastUrl = u.Scheme + "://" + u.Host + u.Path
+		log.Println("find the wish history url.")
+		break
 	}
 	return UrlParam{lastUrl, nMap}
 }
@@ -99,6 +111,10 @@ func LocalHistoryJSONFileToMap() map[string][]HKRPGWish {
 
 // FetchWishes 从指定 URL 及参数中拉取抽卡参数, 并追加到 Map 中
 func FetchWishes(urlParam UrlParam, localHistoryMap map[string][]HKRPGWish) {
+	if urlParam.BaseUrl == "" || len(urlParam.ParamMap) == 0 {
+		log.Println("cannot find the wish history url.")
+		return
+	}
 	paramMap := urlParam.ParamMap
 	// 循环抽卡类型
 	for k, v := range gachaTypeMap {
