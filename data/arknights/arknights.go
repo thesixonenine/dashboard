@@ -26,8 +26,8 @@ func main() {
 	// token, _ = url.QueryUnescape(token)
 	// fmt.Println("token: " + token)
 	// fmt.Println("X-Csrf-Token: " + xCsrfToken)
-	token := ""
-	xCsrfToken := ""
+	token := os.Getenv("ARKNIGHTS_TOKEN")
+	xCsrfToken := os.Getenv("ARKNIGHTS_X_CSRF_TOKEN")
 	UpdateGacha(token, xCsrfToken)
 	Stat()
 }
