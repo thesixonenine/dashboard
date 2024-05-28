@@ -36,12 +36,23 @@
 		"chars": [
 			{
 				"isNew": true,
+				"name": "风笛",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 3
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
 				"name": "史尔特尔",
 				"rarity": 5
 			}
 		],
 		"pool": "高级凭证兑换",
-		"ts": 3
+		"ts": 100000
 	},
 	{
 		"chars": [
@@ -52,7 +63,7 @@
 			}
 		],
 		"pool": "高级凭证兑换",
-		"ts": 4
+		"ts": 100001
 	},
 	{
 		"chars": [
