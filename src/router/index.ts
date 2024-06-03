@@ -14,8 +14,12 @@ export default createRouter({
             component: () => import('@/pages/sr/index.vue'),
         },
         {
+            path: '/dashboard',
+            component: () => import('@/pages/dashboard/index.vue'),
+        },
+        {
             path: '/',
-            redirect: '/home',
+            redirect: '/dashboard',
         }
     ],
     // 控制滚动条的位置

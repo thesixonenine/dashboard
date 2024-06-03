@@ -24,11 +24,13 @@ onMounted(() => {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 
   .content {
     margin-top: 70px;
     width: 1200px;
-    min-height: 700px;
+    flex: 1;
   }
 }
 </style>

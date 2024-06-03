@@ -30,14 +30,13 @@ const home = () => {
   z-index: 999;
   width: 100%;
   height: 70px;
-  background-color: white;
+  background-color: #f0f2f5;
   display: flex;
   justify-content: center;
 
   .container {
     width: 1200px;
     height: 70px;
-    background-color: white;
     display: flex;
     justify-content: space-between;
 
