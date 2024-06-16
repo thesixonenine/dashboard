@@ -4332,5 +4332,71 @@
 		],
 		"pool": "沉向深渊的锚",
 		"ts": 1717740487
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717795295
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717995948
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718192246
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718200207
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "深律",
+				"rarity": 4
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718238968
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718322822
 	}
 ]

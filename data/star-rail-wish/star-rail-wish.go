@@ -18,7 +18,7 @@ import (
 	"time"
 )
 
-const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.22.0.0\\Cache\\Cache_Data\\data_2"
+const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.24.0.0\\Cache\\Cache_Data\\data_2"
 const JSONFilePath = "../../src/assets/data/star-rail-wish.json"
 
 var re = regexp.MustCompile(`\p{C}`)
@@ -51,19 +51,22 @@ func FindURLFromLogFile() UrlParam {
 	}
 	lastUrl := ""
 	nMap := map[string]string{}
-	for _, s := range strings.Split(string(content), "1/0/") {
+	split := strings.Split(string(content), "1/0/")
+	for i := len(split) - 1; i >= 0; i-- {
+		s := split[i]
 		t := re.ReplaceAllString(strings.TrimSpace(s), "")
-		if !strings.HasPrefix(s, "http") && !strings.Contains(t, "getGachaLog") {
+		if !strings.HasPrefix(s, "http") || !strings.Contains(t, "getGachaLog") {
 			continue
 		}
 		u, parseErr := url.Parse(t)
 		if parseErr != nil {
 			continue
 		}
-		if FetchData(t).Retcode != 0 {
+		queryMap := ParseQuery(u.RawQuery)
+		queryMap["end_id"] = "0"
+		if FetchData("https://api-takumi.mihoyo.com/common/gacha_record/api/getGachaLog?"+ParamMapToStr(queryMap)).Retcode != 0 {
 			continue
 		}
-		queryMap := ParseQuery(u.RawQuery)
 
 		for k, v := range queryMap {
 			if slices.Contains(absParams, k) {
@@ -132,6 +135,10 @@ func FetchWishes(urlParam UrlParam, localHistoryMap map[string][]HKRPGWish) {
 		paramMap["size"] = strconv.Itoa(size)
 		for {
 			wishList := FetchData(urlParam.BaseUrl + "?" + ParamMapToStr(paramMap)).Data.List
+			if wishList == nil {
+				fmt.Println("未获取到数据")
+				break
+			}
 			isContains := false
 			for _, wish := range wishList {
 				if slices.Contains(localIdList, wish.Id) {
@@ -235,6 +242,10 @@ func FetchData(link string) Page[HKRPGWish] {
 		log.Fatalf("读取HTTP Body异常,err[%s]", err.Error())
 	}
 	p := Page[HKRPGWish]{}
+	if resp.StatusCode != 200 {
+		p.Retcode = -1
+		return p
+	}
 	_ = json.Unmarshal(bodyByte, &p)
 	return p
 }
