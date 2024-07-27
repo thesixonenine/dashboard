@@ -4706,5 +4706,82 @@
 		],
 		"pool": "执裁者",
 		"ts": 1720153955
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867150
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867156
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "夜半",
+				"rarity": 4
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867161
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867172
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867183
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1721002053
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "夜半",
+				"rarity": 4
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1721002929
 	}
 ]
