@@ -4783,5 +4783,173 @@
 		],
 		"pool": "心与镜的印痕",
 		"ts": 1721002929
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "宴",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "凯尔希",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "空构",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1724434445
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "青枳",
+				"rarity": 4
+			}
+		],
+		"pool": "泰拉饭，呜呼，泰拉饭",
+		"ts": 1725273679
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "齐尔查克",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "泰拉饭，呜呼，泰拉饭",
+		"ts": 1725840046
 	}
 ]
