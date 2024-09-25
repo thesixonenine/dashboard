@@ -16,6 +16,7 @@ import 'element-plus/dist/index.css';
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs';
 // 引入 pinia
 import pinia from '@/store';
+import '@/tailwind.css'
 
 const app = createApp(App);
 app.component('Top', Top);
