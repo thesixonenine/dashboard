@@ -6,6 +6,7 @@ import point from '../point/index.vue';
 <template>
 <div class="board">
   <div v-for="n in 25">
+    {{n}}
     <point/>
   </div>
 </div>
