@@ -31,17 +31,17 @@ importers:
         version: 4.4.5(vue@3.5.8(typescript@5.6.2))
     devDependencies:
       '@types/node':
-        specifier: ^22.6.1
-        version: 22.6.1
+        specifier: ^22.7.0
+        version: 22.7.0
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
-        version: 5.1.4(vite@5.4.7(@types/node@22.6.1)(sass@1.79.3))(vue@3.5.8(typescript@5.6.2))
+        version: 5.1.4(vite@5.4.7(@types/node@22.7.0)(sass@1.79.3))(vue@3.5.8(typescript@5.6.2))
       typescript:
         specifier: ^5.6.2
         version: 5.6.2
       vite:
         specifier: ^5.4.7
-        version: 5.4.7(@types/node@22.6.1)(sass@1.79.3)
+        version: 5.4.7(@types/node@22.7.0)(sass@1.79.3)
       vue-tsc:
         specifier: ^2.1.6
         version: 2.1.6(typescript@5.6.2)
@@ -325,8 +325,8 @@ packages:
   '@types/lodash@4.17.9':
     resolution: {integrity: sha512-w9iWudx1XWOHW5lQRS9iKpK/XuRhnN+0T7HvdCCd802FYkT1AMTnxndJHGrNJwRoRHkslGr4S29tjm1cT7x/7w==}
 
-  '@types/node@22.6.1':
-    resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
+  '@types/node@22.7.0':
+    resolution: {integrity: sha512-MOdOibwBs6KW1vfqz2uKMlxq5xAfAZ98SZjO8e3XnAbFnTJtAspqhWk7hrdSAs9/Y14ZWMiy7/MxMUzAOadYEw==}
 
   '@types/web-bluetooth@0.0.16':
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
@@ -811,15 +811,15 @@ snapshots:
 
   '@types/lodash@4.17.9': {}
 
-  '@types/node@22.6.1':
+  '@types/node@22.7.0':
     dependencies:
       undici-types: 6.19.8
 
   '@types/web-bluetooth@0.0.16': {}
 
-  '@vitejs/plugin-vue@5.1.4(vite@5.4.7(@types/node@22.6.1)(sass@1.79.3))(vue@3.5.8(typescript@5.6.2))':
+  '@vitejs/plugin-vue@5.1.4(vite@5.4.7(@types/node@22.7.0)(sass@1.79.3))(vue@3.5.8(typescript@5.6.2))':
     dependencies:
-      vite: 5.4.7(@types/node@22.6.1)(sass@1.79.3)
+      vite: 5.4.7(@types/node@22.7.0)(sass@1.79.3)
       vue: 3.5.8(typescript@5.6.2)
 
   '@volar/language-core@2.4.5':
@@ -1123,13 +1123,13 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  vite@5.4.7(@types/node@22.6.1)(sass@1.79.3):
+  vite@5.4.7(@types/node@22.7.0)(sass@1.79.3):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.22.4
     optionalDependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.0
       fsevents: 2.3.3
       sass: 1.79.3
 
