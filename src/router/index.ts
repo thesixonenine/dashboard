@@ -19,7 +19,7 @@ export default createRouter({
         },
         {
             path: '/',
-            redirect: '/dashboard',
+            component: () => import('@/pages/auth/index.vue'),
         }
     ],
     // 控制滚动条的位置
