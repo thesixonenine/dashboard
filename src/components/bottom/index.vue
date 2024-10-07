@@ -3,42 +3,23 @@
 </script>
 
 <template>
-  <div class="bottom">
-    <div class="content">
-      <div class="left">
-        <a href="https://www.bilibili.com/video/BV1CN41167AC?p=21" target="_blank">参考视频</a>
-      </div>
-      <div class="right">
-        <span>我的Blog</span>
-        <span>我的GitHub</span>
-      </div>
+    <div class="main-container">
+        <div class="flex flex-wrap justify-start gap-20 lg:gap-10 border border-red-500">
+            <div class="flex flex-col text-2xl items-center  border border-red-500">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="https://www.bilibili.com/video/BV1CN41167AC?p=21" target="_blank">参考视频</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="https://www.bilibili.com/video/BV1CN41167AC?p=21" target="_blank">参考音频</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div v-for="i in 5" class="flex-1 bg-green-100 text-2xl font-medium text-nowrap pl-12  border border-red-500">我的Blog{{ i }}</div>
+        </div>
     </div>
-  </div>
 </template>
-
-<style scoped lang="scss">
-.bottom {
-  margin-top: 10px;
-  width: 100%;
-  height: 50px;
-  background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-
-  .content {
-    width: 1200px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-
-    .right {
-      span {
-        margin: 0 5px;
-      }
-    }
-  }
-}
-</style>
