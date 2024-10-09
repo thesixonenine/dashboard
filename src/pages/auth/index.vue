@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <button @click="authorize">登录Google</button>
+    <div class="flex justify-center gap-20 my-20">
+        <button @click="index">回主页</button>
+        <button @click="authorize">{{ accessToken ? '已' : '未' }}登录Google</button>
         <input type="file" @change="handleFileChange"/>
         <button @click="uploadFile">上传文件到Google Drive</button>
     </div>
@@ -8,14 +9,22 @@
 <script setup lang="ts">
 defineOptions({name: 'Auth'});
 import {onMounted, ref} from "vue";
-
 let file = ref();
-let accessToken = ref();
+let accessToken = ref<string>('');
+let item = localStorage.getItem("accessToken");
+accessToken.value = item ? item : '';
 
+const index = () => {
+    window.location.href = window.location.origin;
+};
 // 引导用户进行Google OAuth 2.0授权
 const authorize = () => {
+    if (accessToken.value) {
+        console.log("authed")
+        return
+    }
     const clientId = '410659159953-8laduca307mq64f9u8pn6ebfgfvsl9ii.apps.googleusercontent.com';
-    const redirectUri = 'http://localhost:5173'; // 必须与Cloudflare Workers的URL相同
+    const redirectUri = window.location.origin; // 必须与Cloudflare Workers的URL相同
     const scope = 'https://www.googleapis.com/auth/drive.file';
     window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&access_type=offline`;
 };
@@ -27,6 +36,13 @@ const getAuthorizationCode = () => {
 // 调用后端（Cloudflare Workers）以交换Authorization Code为Access Token
 const exchangeAuthorizationCode = async () => {
     const authorizationCode = getAuthorizationCode();
+    if (accessToken.value) {
+        console.log("authed")
+        if (authorizationCode) {
+            index();
+        }
+        return
+    }
 
     if (authorizationCode) {
         try {
@@ -36,7 +52,12 @@ const exchangeAuthorizationCode = async () => {
                 body: JSON.stringify({code: authorizationCode})
             });
             const data = await response.json();
+            if (data.msg) {
+                console.warn('auth failed: ', data.msg);
+                return
+            }
             accessToken.value = data.access_token;
+            localStorage.setItem("accessToken", accessToken.value);
             console.log('Access Token:', accessToken.value);
         } catch (error) {
             console.error('Failed to exchange token:', error);
@@ -78,6 +99,7 @@ const uploadFile = async () => {
     }
 }
 onMounted(() => {
+    console.log(import.meta.env);
     // 在页面加载时检查是否有Authorization Code并交换为Access Token
     exchangeAuthorizationCode();
 });

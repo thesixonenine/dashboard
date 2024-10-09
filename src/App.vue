@@ -9,9 +9,7 @@ onMounted(() => {
 <template>
     <main class="relative overflow-hidden">
 <!--        <Top/>-->
-<!--        <div class="content">-->
-<!--            <router-view/>-->
-<!--        </div>-->
+        <router-view/>
         <footer class="padding-x padding-t bg-gray-300 pb-8">
             <Bottom/>
         </footer>
