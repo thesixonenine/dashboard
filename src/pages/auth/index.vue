@@ -50,7 +50,7 @@ const exchangeAuthorizationCode = async () => {
             const response = await fetch('https://dashboard.thesixonenine.workers.dev/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({code: authorizationCode})
+                body: JSON.stringify({code: authorizationCode, redirectUri: window.location.origin}),
             });
             const data = await response.json();
             if (data.msg) {
