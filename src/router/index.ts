@@ -18,7 +18,7 @@ export default createRouter({
             component: () => import('@/pages/dashboard/index.vue'),
         },
         {
-            path: '/',
+            path: '/auth',
             component: () => import('@/pages/auth/index.vue'),
         }
     ],
