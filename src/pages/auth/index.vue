@@ -14,6 +14,8 @@ let accessToken = ref<string>('');
 let item = localStorage.getItem("accessToken");
 accessToken.value = item ? item : '';
 
+const redirectUri = window.location.origin + window.location.pathname.replace(/\/+$/, '');
+
 const index = () => {
     window.location.href = window.location.origin;
 };
@@ -24,7 +26,6 @@ const authorize = () => {
         return
     }
     const clientId = '410659159953-8laduca307mq64f9u8pn6ebfgfvsl9ii.apps.googleusercontent.com';
-    const redirectUri = window.location.origin; // 必须与Cloudflare Workers的URL相同
     const scope = 'https://www.googleapis.com/auth/drive.file';
     window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&access_type=offline`;
 };
@@ -50,7 +51,7 @@ const exchangeAuthorizationCode = async () => {
             const response = await fetch('https://dashboard.thesixonenine.workers.dev/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({code: authorizationCode, redirectUri: window.location.origin}),
+                body: JSON.stringify({code: authorizationCode, redirectUri: redirectUri}),
             });
             const data = await response.json();
             if (data.msg) {
