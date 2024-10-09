@@ -39,6 +39,7 @@ const exchangeAuthorizationCode = async () => {
     if (accessToken.value) {
         console.log("authed")
         if (authorizationCode) {
+            console.log("has authCode")
             index();
         }
         return
@@ -99,7 +100,6 @@ const uploadFile = async () => {
     }
 }
 onMounted(() => {
-    console.log(import.meta.env);
     // 在页面加载时检查是否有Authorization Code并交换为Access Token
     exchangeAuthorizationCode();
 });
