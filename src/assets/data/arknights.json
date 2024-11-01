@@ -5454,5 +5454,72 @@
 		],
 		"pool": "定向甄选",
 		"ts": 1727425476
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730449074
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "裁度",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "缄默德克萨斯",
+				"rarity": 5
+			},
+			{
+				"isNew": true,
+				"name": "荒芜拉普兰德",
+				"rarity": 5
+			},
+			{
+				"isNew": true,
+				"name": "蚀清",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730449112
 	}
 ]
