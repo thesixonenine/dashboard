@@ -120,7 +120,7 @@ func UpdateGacha(token string, csrf string) {
 		pageStr := "第" + strconv.Itoa(page) + "页"
 		curGacha := FetchGacha(page, token, csrf)
 		if curGacha.Code != 0 {
-			log.Printf(pageStr+"查询失败,code=%d\n", curGacha.Code)
+			log.Printf(pageStr+"查询失败,code[%d][%s]\n", curGacha.Code, curGacha.Msg)
 			break
 		}
 		listLen := len(curGacha.Data.List)

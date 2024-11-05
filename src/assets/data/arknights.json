@@ -5521,5 +5521,71 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1730449112
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730503883
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1730504395
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1730504401
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730597457
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730678552
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "霜叶",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730764897
 	}
 ]
