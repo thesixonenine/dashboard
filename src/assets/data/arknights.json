@@ -6693,5 +6693,328 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1730851343
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894748
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894758
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "羽毛笔",
+				"rarity": 4
+			},
+			{
+				"isNew": true,
+				"name": "子月",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "红豆",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894765
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "深海色",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894773
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "桃金娘",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "深海色",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "锏",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "卡涅利安",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "红豆",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894780
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "羽毛笔",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894823
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894828
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894832
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "杰克",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730894835
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "桃金娘",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730901335
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安比尔",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730902664
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730903150
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730904030
 	}
 ]
