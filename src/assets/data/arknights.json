@@ -7016,5 +7016,104 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1730904030
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730909583
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "荒芜拉普兰德",
+				"rarity": 5
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730937652
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730937659
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731024092
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731024099
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731082319
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731107883
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731107889
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731160623
 	}
 ]
