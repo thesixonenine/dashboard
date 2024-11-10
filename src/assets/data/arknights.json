@@ -7126,5 +7126,93 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1731163772
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731185805
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "霜叶",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731186032
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731186039
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731211802
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731216192
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731217631
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731219805
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731238491
 	}
 ]
