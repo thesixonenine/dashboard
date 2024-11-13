@@ -7447,5 +7447,38 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1731369829
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731414489
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731454623
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731454634
 	}
 ]
