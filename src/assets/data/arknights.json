@@ -7480,5 +7480,170 @@
 		],
 		"pool": "恶人寥寥",
 		"ts": 1731454634
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1731542496
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731807504
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731807511
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731807516
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深海色",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731807522
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731849016
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "温米",
+				"rarity": 4
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1731904011
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731935177
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深海色",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731935181
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731935185
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731935190
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "缠丸",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731935194
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1731974589
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1732019044
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1732058998
 	}
 ]
