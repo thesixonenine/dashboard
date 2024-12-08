@@ -18,7 +18,7 @@ import (
 	"time"
 )
 
-const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.30.1.0\\Cache\\Cache_Data\\data_2"
+const WishHistoryFilePath = "C:\\Program Files\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.31.2.0\\Cache\\Cache_Data\\data_2"
 const JSONFilePath = "../../src/assets/data/star-rail-wish.json"
 
 var re = regexp.MustCompile(`\p{C}`)

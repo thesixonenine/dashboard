@@ -8189,5 +8189,104 @@
 		],
 		"pool": "常驻标准寻访",
 		"ts": 1733238171
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733402864
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733402868
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "苏苏洛",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733402891
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733402895
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733402899
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "杰西卡",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733408207
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733408213
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深律",
+				"rarity": 4
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733408217
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733624702
 	}
 ]
