@@ -8288,5 +8288,82 @@
 		],
 		"pool": "证实，完成，指引",
 		"ts": 1733624702
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733750277
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733750282
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733750286
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1733789201
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1734011485
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1734011491
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "引星棘刺",
+				"rarity": 5
+			}
+		],
+		"pool": "证实，完成，指引",
+		"ts": 1734011495
 	}
 ]
