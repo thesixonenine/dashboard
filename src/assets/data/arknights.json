@@ -8878,5 +8878,49 @@
 		],
 		"pool": "炽吾生平",
 		"ts": 1738376995
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738464942
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "寻澜",
+				"rarity": 4
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738549217
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "寻澜",
+				"rarity": 4
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738635476
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1740004371
 	}
 ]
