@@ -6,7 +6,8 @@ ENV PATH=$PNPM_HOME:$PATH
 
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources \
     && apt-get update && apt-get upgrade -y \
-    && apt-get install -y vim curl git gnupg2 gnupg-agent \
+    && apt-get install -y --no-install-recommends \
+       vim curl git gnupg2 gnupg-agent openssh-client ncat pinentry-curses \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
