@@ -12,7 +12,7 @@
   ],
   "remoteUser": "node",
   "remoteEnv": {"GIT_SSH_COMMAND": "ssh -o ProxyCommand='ncat --proxy host.docker.internal:1080 --proxy-type socks5 %h %p'"},
-  "postCreateCommand": "npm config set registry https://registry.npmmirror.com",
+  "postCreateCommand": "bash .devcontainer/init.sh",
   "customizations": {
         "vscode": {
             "settings": {
