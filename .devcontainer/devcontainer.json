@@ -8,8 +8,7 @@
   },
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/node/.gnupg,type=bind,consistency=cached",
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.local/share/pnpm,target=/home/node/.local/share/pnpm,type=bind,consistency=cached"
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/node/.gnupg,type=bind,consistency=cached"
   ],
   "remoteUser": "node",
   "remoteEnv": {
