@@ -9,6 +9,4 @@ RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debi
     && rm -rf /var/lib/apt/lists/* \
     # add sudoers
     && echo node ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/node \
-    && chmod 0440 /etc/sudoers.d/node \
-    # set registry
-    && npm config set registry https://registry.npmmirror.com
+    && chmod 0440 /etc/sudoers.d/node
