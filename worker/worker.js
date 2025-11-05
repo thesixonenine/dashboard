@@ -36,7 +36,7 @@ async function handleRequest(request, env, ctx) {
     } 
     // QBot消息
     else if (request.method === 'POST') {
-      return handleQBotSign(request);
+      return await handleQBotSign(request, env);
     }
   }
   // google drive
@@ -46,13 +46,13 @@ async function handleRequest(request, env, ctx) {
   return env.ASSETS.fetch(request);
 }
 
-async function handleQBotSign(request) {
+async function handleQBotSign(request, env) {
   const { d, op } = await request.json();
   console.log(d);
   console.log(op);
   const pt = d.plain_token;
   const et = d.event_ts;
-  const seed = "p0COamyAMZmzCPcp3HVjxBPet8Ncr6Lb";
+  const seed = env.QBOT_SEED;
 
   const signature = generateSignature(seed, et, pt);
   return new Response('{"plain_token": "'+pt+'", "signature": "'+signature+'"}', {status: 200});
