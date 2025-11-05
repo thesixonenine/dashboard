@@ -1,6 +1,7 @@
 name = "dashboard"
 main = "worker/worker.js"
 compatibility_date = "2025-11-05"
+preview_urls = false
 [assets]
 directory = "./dist"
 binding = "ASSETS"
