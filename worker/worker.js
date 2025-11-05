@@ -41,7 +41,7 @@ async function handleRequest(request, env, ctx) {
   }
   // google drive
 //   else if (request.method === 'POST' ) {
-//     return await exchangeToken(request);
+//     return await exchangeToken(request, env);
 //   }
   return env.ASSETS.fetch(request);
 }
@@ -70,10 +70,10 @@ function handleMPSign(request) {
 }
 
 // 处理Authorization Code交换为Access Token的请求
-async function exchangeToken(request) {
+async function exchangeToken(request, env) {
   const { code, redirectUri } = await request.json();
-  const clientId = '410659159953-8laduca307mq64f9u8pn6ebfgfvsl9ii.apps.googleusercontent.com';
-  const clientSecret = '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';
+  const clientId = env.GOOGLE_CLIENT_ID;
+  const clientSecret = env.GOOGLE_CLIENT_SECRET;
 
   const tokenUrl = 'https://oauth2.googleapis.com/token';
   const tokenParams = new URLSearchParams();
