@@ -9,17 +9,27 @@
  */
 
 import { generateSignature } from "./signature.js";
+import { resend } from "./email.js";
 
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request));
-});
+export default {
+  async fetch(request, env, ctx) {
+    return await handleRequest(request, env, ctx);
+  },
+};
 
-async function handleRequest(request) {
-  if (request.method === 'OPTIONS') {
-    return handleOptions(request);
+async function handleRequest(request, env, ctx) {
+//   if (request.method === 'OPTIONS') {
+//     return handleOptions(request);
+//   }
+  // 邮件处理
+  if (request.url.includes('/email/notify')){
+    // 验证签名
+    if (request.method === 'POST') {
+      return await resend(env, `<h1>Hello!</h1><p>This email was sent via Cloudflare Worker and Resend API.</p>`);
+    }
   }
   // 公众号相关的业务
-  if (request.url.includes('/qbot/notify')){
+  else if (request.url.includes('/qbot/notify')){
     // 验证签名
     if (request.method === 'GET') {
       return handleMPSign(request);
@@ -29,10 +39,11 @@ async function handleRequest(request) {
       return handleQBotSign(request);
     }
   }
-  if (request.method === 'POST' ) {
-    return await exchangeToken(request);
-  }
-  return new Response("success", {status: 200});
+  // google drive
+//   else if (request.method === 'POST' ) {
+//     return await exchangeToken(request);
+//   }
+  return env.ASSETS.fetch(request);
 }
 
 async function handleQBotSign(request) {
