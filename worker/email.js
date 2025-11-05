@@ -1,7 +1,7 @@
 export async function resend(env, data) {
     const RESEND_API_KEY = env.RESEND_API_KEY;
 
-    const data = {
+    const datas = {
       from: 'Resend <resend@notifications.thesixonenine.site>',
       to: ['thesixonenine@outlook.com'],
       subject: 'Notify from Cloudflare Worker',
@@ -15,7 +15,7 @@ export async function resend(env, data) {
         'Authorization': `Bearer ${RESEND_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(datas),
     });
     if (!response.ok) {
       const errorText = await response.text();
