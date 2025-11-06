@@ -1,0 +1,25 @@
+{
+  "name": "Dashboard DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "NODE_VERSION": "22.16.0-slim"
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/node/.gnupg,type=bind,consistency=cached"
+  ],
+  "remoteUser": "node",
+  "remoteEnv": {"GIT_SSH_COMMAND": "ssh -o ProxyCommand='ncat --proxy host.docker.internal:1080 --proxy-type socks5 %h %p'"},
+  "postCreateCommand": "bash .devcontainer/init.sh",
+  "postStartCommand": "npm run dev",
+  "customizations": {
+        "vscode": {
+            "settings": {
+                "git.enableCommitSigning": true,
+                "terminal.integrated.inheritEnv": true
+            }
+        }
+    }
+}
